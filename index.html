@@ -676,10 +676,11 @@
     width:42px; height:42px; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
     box-shadow:0 8px 20px rgba(0,0,0,0.3); transition: transform .2s var(--bounce);
   }
-  .lightbox-close:hover, .lightbox-nav:hover{ transform:scale(1.1); }
+  .lightbox-close:hover{ transform:scale(1.1); }
   .lightbox-close{ top:-14px; right:-14px; }
   .lightbox-prev{ left:-16px; top:50%; transform:translateY(-50%); }
   .lightbox-next{ right:-16px; top:50%; transform:translateY(-50%); }
+  .lightbox-prev:hover, .lightbox-next:hover{ transform:translateY(-50%) scale(1.1); }
   @media (max-width:600px){
     .lightbox-prev{ left:6px; } .lightbox-next{ right:6px; }
     .lightbox-close{ top:6px; right:6px; }
@@ -867,7 +868,7 @@
     </div>
     <div class="lock-card">
       <span class="eyebrow">for rina's eyes only</span>
-      <h1>One quick thing firsts</h1>
+      <h1>One quick thing first</h1>
       <p class="sub">baka di ikaw si rina ha—kaya mo yann, no pressure (˶ᵔ ᵕ ᵔ˶)</p>
       <div class="otp-row" id="otp-row">
         <input type="tel" inputmode="numeric" maxlength="1" class="otp-box" autocomplete="off" aria-label="digit 1">
